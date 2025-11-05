@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🩺 CuraLink — AI-Powered Clinical Research Connector
+🔗 Live Demo
 
-## Getting Started
+🌐 Deployed App: https://cura-link-adcp.vercel.app/
 
-First, run the development server:
+🎥 Demo Video: https://www.loom.com/share/afb3822e828b4df995808fb2a819f28d
 
-```bash
+🚀 Project Overview
+
+CuraLink is an AI-driven platform that connects patients, researchers, and medical experts by simplifying the discovery of clinical trials, research papers, and expert insights — all in one place.
+
+The goal is to make medical research discovery simple, accessible, and intelligent.
+
+🧠 Key Features
+
+✅ AI-Powered Summaries — Summarizes complex medical research or trial data into easy-to-understand insights using OpenAI GPT models.
+✅ Clinical Trial Search — Search and filter real clinical trials using disease names or keywords.
+✅ Publication Explorer — Discover relevant medical publications to stay informed.
+✅ Favorites System — Save and manage your favorite trials or research articles.
+✅ Responsive UI — Built with TailwindCSS for a clean and modern experience.
+
+🧩 Tech Stack
+Layer	Technologies Used
+Frontend	Next.js (React), TailwindCSS, TypeScript
+Backend	Next.js API Routes + OpenAI API
+AI Model	GPT-4o-mini for fast summarization
+Database (optional)	MongoDB / Local state (depending on feature version)
+Deployment	Vercel
+⚙️ How It Works
+
+Search: User searches for a medical term, disease, or keyword.
+
+Fetch: The app fetches trials or research data (mock or live API).
+
+Summarize: OpenAI GPT-4o-mini generates short, clear summaries.
+
+Save: User can mark trials as favorites for quick access.
+
+📸 Screenshots (Optional)
+
+Add UI screenshots here if you want to make the repo look more appealing.
+
+🧑‍💻 Setup Instructions
+# Clone the repository
+git clone https://github.com/AdityaMudgal1/CuraLink.git
+cd CuraLink
+
+# Install dependencies
+npm install
+
+# Create a .env.local file in root directory
+# and add your OpenAI API key
+OPENAI_API_KEY=your_api_key_here
+
+# Run locally
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🏁 Future Improvements
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Integration with real-time clinical trial APIs (NIH/WHO)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+User login for personalized recommendations
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Chat-based query assistant for research guidance
